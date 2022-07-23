@@ -21,4 +21,5 @@ public class TrainUser {
     private String mail;
 
     private Integer status;
+
 }

@@ -33,5 +33,4 @@ public class SysUser {
     private Date operateTime;
 
     private String operateIp;
-
 }

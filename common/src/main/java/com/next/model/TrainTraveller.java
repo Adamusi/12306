@@ -27,4 +27,5 @@ public class TrainTraveller {
     private String address;
 
     private String email;
+
 }

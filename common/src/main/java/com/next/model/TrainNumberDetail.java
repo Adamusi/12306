@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class TrainNumberDetail {
+public  class TrainNumberDetail {
     private Integer id;
 
     private Integer trainNumberId;

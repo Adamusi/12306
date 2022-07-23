@@ -27,4 +27,5 @@ public class TrainNumber {
     private Short type;
 
     private Integer seatNum;
+
 }

@@ -15,4 +15,5 @@ public class TrainStation {
     private String name;
 
     private Integer cityId;
+
 }
