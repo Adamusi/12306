@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.next.dao2.TrainNumberDetailMapper" >
+<mapper namespace="com.next.dao.TrainNumberDetailMapper" >
   <resultMap id="BaseResultMap" type="com.next.model.TrainNumberDetail" >
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="train_number_id" property="trainNumberId" jdbcType="INTEGER" />

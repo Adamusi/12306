@@ -1,4 +1,4 @@
-package com.next.dao2;
+package com.next.dao;
 
 import com.next.model.TrainUserTraveller;
 import org.apache.ibatis.annotations.Param;
