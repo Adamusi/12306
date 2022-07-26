@@ -15,7 +15,7 @@ import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import javax.sql.DataSource;
 
 @Configuration
-@MapperScan(basePackages = "com.next.dao", sqlSessionTemplateRef = "orderSqlSessionTemplate")
+@MapperScan(basePackages = "com.next.orderDao", sqlSessionTemplateRef = "orderSqlSessionTemplate")
 public class OrderDataSourceConfig {
 
     @Bean(name = DataSources.TRAIN_ORDER_DB)
@@ -33,7 +33,7 @@ public class OrderDataSourceConfig {
     public SqlSessionFactory orderSqlSessionFactory(@Qualifier(DataSources.TRAIN_ORDER_DB) DataSource orderDB) throws Exception {
         SqlSessionFactoryBean bean = new SqlSessionFactoryBean();
         bean.setDataSource(orderDB);
-        bean.setMapperLocations(new PathMatchingResourcePatternResolver().getResources("classpath:mappers/*.xml"));
+        bean.setMapperLocations(new PathMatchingResourcePatternResolver().getResources("classpath:orderMappers/*.xml"));
         return bean.getObject();
     }
 

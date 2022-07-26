@@ -24,7 +24,7 @@ import java.util.Properties;
 import java.util.concurrent.ConcurrentHashMap;
 
 @Configuration
-@MapperScan(basePackages = "com.next.dao", sqlSessionTemplateRef = "trainSeatSqlSessionTemplate")
+@MapperScan(basePackages = "com.next.seatDao", sqlSessionTemplateRef = "trainSeatSqlSessionTemplate")
 public class SeatDataSourceConfig {
 
     @Bean(name = DataSources.TRAIN_SEAT_DB_1)
@@ -115,7 +115,7 @@ public class SeatDataSourceConfig {
     public SqlSessionFactory trainSeatSqlSessionFactory(@Qualifier("trainSeatShardingDataSource") DataSource dataSource) throws Exception {
         SqlSessionFactoryBean bean = new SqlSessionFactoryBean();
         bean.setDataSource(dataSource);
-        bean.setMapperLocations(new PathMatchingResourcePatternResolver().getResources("classpath:mappers/*.xml"));
+        bean.setMapperLocations(new PathMatchingResourcePatternResolver().getResources("classpath:seatMappers/*.xml"));
         return bean.getObject();
     }
 

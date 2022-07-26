@@ -24,7 +24,7 @@ import java.util.Map;
 import java.util.Properties;
 
 @Configuration
-@MapperScan(basePackages = "com.next.dao", sqlSessionTemplateRef = "sqlSessionTemplate")
+@MapperScan(basePackages = "com.next.dao2", sqlSessionTemplateRef = "sqlSessionTemplate")
 public class BasicDataSourceConfig {
 
     @Primary

@@ -1,7 +1,7 @@
 package com.next.service;
 
 import com.next.common.TrainType;
-import com.next.dao.TrainNumberMapper;
+import com.next.dao2.TrainNumberMapper;
 import com.next.exception.BusinessException;
 import com.next.model.TrainNumber;
 import com.next.param.TrainNumberParam;

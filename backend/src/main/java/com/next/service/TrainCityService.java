@@ -1,6 +1,6 @@
 package com.next.service;
 
-import com.next.dao.TrainCityMapper;
+import com.next.dao2.TrainCityMapper;
 import com.next.exception.BusinessException;
 import com.next.model.TrainCity;
 import com.next.param.TrainCityParam;
